@@ -1,10 +1,21 @@
-import { Typography } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
-import React from 'react';
-import { Container } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
+import React from 'react';
+
+const useStyles = makeStyles({
+  btn: {
+    fontSize: '60px',
+    background: 'violet',
+    '&:hover': {
+      background: 'blue',
+    },
+  },
+})
 
 export default function Create() {
+  const classes = useStyles();
   return (
     <Container>
       {/* typography practice goes here*/}
@@ -17,6 +28,7 @@ export default function Create() {
       </Typography>
 
       <Button
+        className={classes.btn}
         onClick={() => console.log('you clicked me')}
         color="secondary" 
         variant="contained" 
