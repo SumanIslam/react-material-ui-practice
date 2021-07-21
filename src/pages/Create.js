@@ -5,13 +5,7 @@ import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import React from 'react';
 
 const useStyles = makeStyles({
-  btn: {
-    fontSize: '60px',
-    background: 'violet',
-    '&:hover': {
-      background: 'blue',
-    },
-  },
+  
 })
 
 export default function Create() {
